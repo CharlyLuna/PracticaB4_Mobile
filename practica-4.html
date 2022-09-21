@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     />
     <title>MARCA Claro México - Diario online líder en información ...</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container-fliud">
@@ -62,7 +61,7 @@
           <nav class="navbar d-flex navbar-expand-md container text-white py-0" style="font-weight:bold;">
             <a class="navbar-brand d-block d-md-none" style="background-color:white; color:rgb(203, 23, 23);" href="#">MC</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar-light"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -159,10 +158,22 @@
             </ul>
           </div>
           <div class="flex-grow-0">
-            <form class="form-inline my-input">
-                <input class="form-control mr-sm-2 " style="font-size:13px; width:100%; padding-right: 40px;" type="search" placeholder="Buscar en marca.com" aria-label="Search">
-                <div class="search-icon">
-                  <img src="images/search-icon.png" alt="">
+            <form class="form-inline" style="position: relative;">
+                <input 
+                class="form-control mr-sm-2 " 
+                style="font-size:13px; width:100%; padding-right: 40px;" 
+                type="search" 
+                placeholder="Buscar en marca.com" 
+                aria-label="Search"
+                >
+                <div 
+                class="search-icon"
+                style="
+                position: absolute;
+                background-image: url(images/search-icon.png);
+                right: 10px;"
+                >
+                  <img src="images/search-icon.png" alt="" style="width: 40px; height: auto;">
                 </div>
                 <!-- <img src="images/search-icon.png" alt="search-icon" style="width:40px; height:auto;">             -->
             </form>
